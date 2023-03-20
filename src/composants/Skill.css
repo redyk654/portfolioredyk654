@@ -1,0 +1,35 @@
+.skill {
+    box-shadow: 2px 2px 9px rgb(182, 184, 184),
+                -2px -2px 9px #f1f1f1;
+    width: 50%;
+    height: 25vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #010101c9;
+}
+
+.text-skill {
+    font-size: 1.3em;
+}
+
+.skill img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .skill {
+        width: 70%;
+
+    }
+
+    .text-skill {
+        font-size: 1em;
+    }
+}

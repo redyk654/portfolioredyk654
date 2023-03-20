@@ -1,0 +1,85 @@
+.projects {
+    margin-top: 80px;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.projects h1 {
+    position: relative;
+}
+
+.projects h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: -15px 0px;
+    background-color: #ec9645;
+    width: 40px;
+    height: 15px;
+}
+
+.web-projects {
+    margin-top: 50px;
+}
+
+.projects .web-projects aside {
+    /* overflow: auto; */
+    /* height: 95vh; */
+    width: 100%;
+    margin: auto;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.project .web-projects aside::-webkit-scrollbar-thumb {
+    background-color: #ec9645;
+}
+
+.project .web-projects aside::-webkit-scrollbar-track {
+    background-color: #f5c390;
+}
+
+.project {
+    display: inline-block;
+    width: 65%;
+    margin: auto;
+    box-shadow: 2px 2px 5px #fbc28d,
+                -2px -2px 5px #fbc28d;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 18px; */
+}
+
+.project img {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.project .text-project {
+    font-size: .95em;
+    opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text-project ul li a {
+    color: #fff;
+    display: block;
+    width: 8vw;
+    border-radius: 3px;
+    background: #ec9645;
+    text-align: center;
+}
+
+.text-project ul li a:hover {
+    background: #dd7c22;
+}

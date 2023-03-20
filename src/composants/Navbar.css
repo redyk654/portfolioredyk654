@@ -1,0 +1,155 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: url('../images/blob-svg.svg');
+    background-position: 90% 20px;
+    background-repeat: no-repeat;
+    background-position: contain;
+    height: 100vh;
+    padding: 15px 20px;
+    font-size: .98em;
+    position: relative;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+header .profil {
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    width: 360px;
+    height: 420px;
+    border: none;
+}
+
+header .banner {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    font-size: xx-large;
+    color: #464646;
+}
+
+header .banner .visit {
+    display: block;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: .95em;
+    color: #5043a5d5;
+    border: 4px solid #5043a5d5;
+    margin-top: 10px;
+    transition: all .4s;
+}
+
+header .banner .visit:hover {
+    color: #fff;
+    background: #5043a5d5;
+    border: none;
+}
+
+header .logo {
+    flex: 1;
+    height: 8vh;
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+header .navbar {
+    height: 8vh;
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all .2s;
+}
+
+header .navbar li a{
+    color: #5143abbb;
+    font-weight: 500;
+
+}
+
+header .navbar li a:hover{
+    color: #5043ab;
+}
+
+header .fa-bars {
+    display: none;
+}
+
+@media screen and (max-width: 895px) {
+
+    header {
+        background-position: 110% 20px;
+    }
+
+    header .profil {
+        top: 10%;
+        right: 4%;
+        width: 300px;
+        height: 360px;
+    }
+
+    header .banner{    
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    header {
+        background: #5043ab;
+        height: 8vh;
+    }
+
+    header .profil, header .banner {
+        display: none;
+    }
+
+    header .fa-bars {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+    }
+
+    header .navbar {
+        background-color: #5043ab;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 0%;
+        height: 35vh;
+        overflow-y: hidden;
+        line-height: 40px;
+        z-index: 11;
+    }
+
+    header .navbar.active {
+        width: 100%;
+    }
+
+    header .navbar li {
+        border-bottom: 1px solid #fff;
+        padding: 0 5px;
+    }
+
+    header .navbar li a, header .navbar.active li a{
+        color: #fff;
+        font-weight: normal;
+        display: block;
+    }
+}
